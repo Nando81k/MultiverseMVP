@@ -38,6 +38,7 @@ public class CashRegister {
         } else {
             System.out.println("Invalid input! Please enter a valid cash tendered amount.");
             return;
+
         }
     }
 }
