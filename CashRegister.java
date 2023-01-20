@@ -13,5 +13,31 @@ public class CashRegister {
         double cashTendered = 0; // initialize cashTendered to 0
         double salesTax = 0.08; // 8% sales tax
         String currencyCode = "USD"; // initialize currencyCode to USD
+        
+        while(true){
+            System.out.print("Enter item name (or 'done' to finish): "); // prompt user for item name
+            String itemName = scanner.nextLine(); // store item name in itemName
+            if(itemName.equalsIgnoreCase("done")) break; // if user enters "done", break out of loop
+            System.out.print("Enter item price: "); // prompt user for item price
+            if (scanner.hasNextDouble()) { // if user enters a double
+                double itemPrice = scanner.nextDouble(); // store item price in itemPrice
+                purchaseAmount += itemPrice; // add itemPrice to purchaseAmount
+                items.put(itemName, itemPrice); // add item name and price to hashmap
+            } else {
+                System.out.println("Invalid input! Please enter a valid item price."); // if user does not enter a double, print error message
+                return; // exit program
+            }
+            scanner.nextLine(); // Consume newline left-over
+        }
+
+        purchaseAmount += purchaseAmount*salesTax;
+        System.out.println("Total Amount (including tax): " + purchaseAmount); //
+        System.out.print("Enter cash tendered: ");
+        if (scanner.hasNextDouble()) {
+            cashTendered = scanner.nextDouble(); // store cashTendered in cashTendered
+        } else {
+            System.out.println("Invalid input! Please enter a valid cash tendered amount.");
+            return;
+        }
     }
 }
