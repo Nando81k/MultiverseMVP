@@ -1,4 +1,5 @@
 Cash Register
+
 This is a simple cash register program that calculates the purchase amount, change, and currency formatting using Java.
 
 Getting Started
