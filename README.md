@@ -15,24 +15,24 @@ An IDE such as Eclipse or IntelliJ IDEA
 
 Installing:
 
-Clone or download the repository to your local machine.
+1. Clone or download the repository to your local machine.
 
-Import the project into your IDE.
+2. Import the project into your IDE.
 
-Run the CashRegister.java file.
+3. Run the CashRegister.java file.
 
 
-How to use
+How to use:
 
-Run the program
+1. Run the program
 
-Enter the name of an item and its price. You can add as many items as you want or type "done" to finish adding items.
+2. Enter the name of an item and its price. You can add as many items as you want or type "done" to finish adding items.
 
-Once you have entered all items, the program will calculate the purchase amount including the sales tax (8%)
+3. Once you have entered all items, the program will calculate the purchase amount including the sales tax (8%)
 
-Then it will ask you to enter the cash tendered
+   Then it will ask you to enter the cash tendered
 
-Finally, it will ask you to enter the currency code (e.g. USD, EUR, INR)
+4. Finally, it will ask you to enter the currency code (e.g. USD, EUR, INR)
 
 The program will then calculate the change and display the change and the items with their prices in the chosen currency.
 
@@ -41,7 +41,7 @@ Built With:
 
 Java SE Development Kit 8
 
-Eclipse
+Inteli-J IDEA
 
 Contributing:
 
