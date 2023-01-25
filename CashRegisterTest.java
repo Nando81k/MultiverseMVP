@@ -17,6 +17,7 @@ class CashRegisterTest {
         assertEquals(46.725, purchaseAmount, 0.001);
     }
 
+
     @Test
     public void testChangeCalculation() {
         CashRegister cashRegister = new CashRegister();
